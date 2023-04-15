@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "76616c6172",
+    "section": "",
+    "text": "Hi! I’m Nox, I write about technical topics, things that interests me, and things that I’m doing that may be of use to you.\nAspirationally — seeker of truth, pursuer of knowledge, eager student of technology. But you must be wondering, who exactly is this Nox character? What secrets does he hold? What knowledge has he yet to unlock?\n\n\n\n\n\n\nJoin me on this voyage of exploration!\n\n\n\nRead my Posts.\n\n\nLet’s satiate our curiosity and push the boundaries of what’s possible, together~"
+  },
+  {
+    "objectID": "quarto_examples.html",
+    "href": "quarto_examples.html",
+    "title": "76616c6172",
+    "section": "",
+    "text": "Apr 14, 2023 • 1 min read\nThis is an example post using quarto markdown syntax..\n\n\nLet’s start with some code!\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n    fmt.Println(\"Yo\")\n}\nDid you like my code?\n\n\n\n\n\n\n\n\n\nNote with Title\n\n\n\nThis is an example of a callout note with a title.\n\n\nI heard in copywriting they use this technique called “call to action” intermittently to get you to do stuff. It’s very effective!\n\n\n\n\n\n\n\nflowchart LR\n  A[Hard edge] --> B(Round edge)\n  B --> C{Decision}\n  C --> D[Result one]\n  C --> E[Result two]\n\n\n\n\n\n\n\n\nAren’t these charts cool?\n\n\n\ninline math: \\(E = mc^{2}\\) \\[E = mc^{2}\\]\nDoesn’t this math look sophisticated?\n\n\n\n\nIsn’t this an absolute banger?\n\n\n\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\nEveryone loves tables right?\n\n\n\n\n\n\nAre you not entertained?\n\n\n\nYou can let me know on twitter!"
+  },
+  {
+    "objectID": "quarto_examples.html#code-blocks",
+    "href": "quarto_examples.html#code-blocks",
+    "title": "76616c6172",
+    "section": "Code blocks",
+    "text": "Code blocks\nLet’s start with some code!\npackage main\n\nimport \"fmt\"\n\nfunc main() {\n    fmt.Println(\"Yo\")\n}\nDid you like my code?"
+  },
+  {
+    "objectID": "quarto_examples.html#callouts",
+    "href": "quarto_examples.html#callouts",
+    "title": "76616c6172",
+    "section": "Callouts",
+    "text": "Callouts\n\n\n\n\n\n\nNote with Title\n\n\n\nThis is an example of a callout note with a title.\n\n\nI heard in copywriting they use this technique called “call to action” intermittently to get you to do stuff. It’s very effective!"
+  },
+  {
+    "objectID": "quarto_examples.html#charts",
+    "href": "quarto_examples.html#charts",
+    "title": "76616c6172",
+    "section": "Charts",
+    "text": "Charts\n\n\n\n\nflowchart LR\n  A[Hard edge] --> B(Round edge)\n  B --> C{Decision}\n  C --> D[Result one]\n  C --> E[Result two]\n\n\n\n\n\n\n\n\nAren’t these charts cool?"
+  },
+  {
+    "objectID": "quarto_examples.html#math-formulas",
+    "href": "quarto_examples.html#math-formulas",
+    "title": "76616c6172",
+    "section": "Math formulas",
+    "text": "Math formulas\ninline math: \\(E = mc^{2}\\) \\[E = mc^{2}\\]\nDoesn’t this math look sophisticated?"
+  },
+  {
+    "objectID": "quarto_examples.html#embedded-videos",
+    "href": "quarto_examples.html#embedded-videos",
+    "title": "76616c6172",
+    "section": "Embedded videos",
+    "text": "Embedded videos\n\nIsn’t this an absolute banger?"
+  },
+  {
+    "objectID": "quarto_examples.html#tables",
+    "href": "quarto_examples.html#tables",
+    "title": "76616c6172",
+    "section": "Tables",
+    "text": "Tables\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\nEveryone loves tables right?\n\n\n\n\n\n\nAre you not entertained?\n\n\n\nYou can let me know on twitter!"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "76616c6172",
+    "section": "",
+    "text": "Posts\n\nQuarto Examples\nApr 14, 2023 • 1 min read\nThis is an example post using quarto markdown syntax.."
+  }
+]
