@@ -1,0 +1,38 @@
+project:
+  type: website
+
+website:
+  title: 76616c6172
+
+  navbar:
+    foreground: gray-100
+    background: black
+    left:
+      - href: blog.qmd
+    right:
+      - text: "About"
+        href: index.html
+      - icon: github
+        href: https://github.com/76616c6172
+        aria-label: GitHub
+      - icon: twitter
+        href: https://twitter.com/76616c6172
+        aria-label: Twitter
+
+  twitter-card: true
+
+  sidebar:
+    search: true
+
+  page-footer:
+    foreground: gray-100
+    background: black
+    center:
+      - text: "76616c6172"
+        href: https://twitter.com/76616c6172
+
+format:
+  html:
+    theme: morph_light.scss
+    toc: true
+    toc-depth: 5

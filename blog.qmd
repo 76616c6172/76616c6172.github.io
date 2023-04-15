@@ -1,0 +1,9 @@
+# Posts
+
+
+###  [Quarto Examples](quarto_examples.qmd)
+```
+Apr 14, 2023 • 1 min read
+```
+
+This is an example post using quarto markdown syntax..

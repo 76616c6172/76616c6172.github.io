@@ -1,0 +1,75 @@
+# Quarto examples
+```
+Apr 14, 2023 • 1 min read
+```
+This is an example post using quarto markdown syntax..
+
+## Code blocks
+
+Let's start with some code!
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Yo")
+}
+```
+
+Did you like my code?
+
+## Callouts
+
+::: {.callout-note}
+## Note with Title
+
+This is an example of a callout note with a title.
+:::
+
+I heard in copywriting they use this technique called "call to action" intermittently to get you to do stuff. It's very effective!
+
+
+## Charts
+
+```{mermaid}
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
+```
+
+Aren't these charts cool?
+
+
+## Math formulas
+
+inline math: $E = mc^{2}$
+$$E = mc^{2}$$
+
+Doesn't this math look sophisticated?
+
+## Embedded videos
+
+{{< video https://www.youtube.com/embed/xuasIaQrUEc >}}
+
+Isn't this an absolute banger?
+
+## Tables
+
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|   12  |  12  |    12   |    12  |
+|  123  |  123 |   123   |   123  |
+|    1  |    1 |     1   |     1  |
+
+Everyone loves tables right? 
+
+::: {.callout-note}
+## Are you not entertained?
+
+You can let me know on [twitter](https://twitter.com/76616c6172)!
+:::
+

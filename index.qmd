@@ -1,0 +1,26 @@
+---
+title: "76616c6172"
+about:
+  template: solana
+
+  #links:
+  #  - icon: twitter
+  #    text: twitter
+  #    href: https://twitter.com/76616c6172
+  #  - icon: github
+  #    text: Github
+  #    href: https://github.com/76616c6172
+---
+
+Hi! I'm Nox, I write about technical topics, things that interests me, and things that I'm doing that may be of use to you.
+
+Aspirationally — seeker of truth, pursuer of knowledge, eager student of technology.
+But you must be wondering, who exactly is this Nox character? What secrets does he hold? What knowledge has he yet to unlock?
+
+::: {.callout-note}
+## **Join me on this voyage of exploration!**
+
+Read my [Posts](https://76616c6172.github.io/blog.html).
+:::
+
+Let's satiate our curiosity and push the boundaries of what's possible, together~
