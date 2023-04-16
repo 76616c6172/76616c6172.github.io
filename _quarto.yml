@@ -33,6 +33,6 @@ website:
 
 format:
   html:
-    theme: morph_light.scss
+    theme: theme_light.scss
     toc: true
     toc-depth: 5
