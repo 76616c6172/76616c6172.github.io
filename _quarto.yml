@@ -21,7 +21,7 @@ website:
     foreground: gray-100
     background: black
     center:
-      - text: "76616c6172"
+      - icon: twitter
         href: https://twitter.com/76616c6172
 
 format:
