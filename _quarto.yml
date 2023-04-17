@@ -9,6 +9,7 @@ website:
     anonymize-ip: false
 
   navbar:
+    collapse: false 
     foreground: gray-100
     background: black
     left:
