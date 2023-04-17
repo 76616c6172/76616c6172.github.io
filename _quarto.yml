@@ -11,13 +11,6 @@ website:
       - text: "About"
         href: index.html
       - href: blog.qmd
-    right:
-      - icon: github
-        href: https://github.com/76616c6172
-        aria-label: GitHub
-      - icon: twitter
-        href: https://twitter.com/76616c6172
-        aria-label: Twitter
 
   twitter-card: true
 
