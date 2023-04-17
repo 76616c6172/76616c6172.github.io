@@ -3,6 +3,10 @@ project:
 
 website:
   title: 76616c6172
+  reader-mode: false
+  google-analytics:
+    tracking-id: "G-9ZP5Z333RG"
+    anonymize-ip: false
 
   navbar:
     foreground: gray-100
