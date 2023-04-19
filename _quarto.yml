@@ -10,7 +10,7 @@ website:
 
   navbar:
     collapse: false 
-    foreground: gray-100
+    foreground: white
     background: black
     left:
       - text: "About"
@@ -23,7 +23,7 @@ website:
     search: true
 
   page-footer:
-    foreground: gray-100
+    foreground: white
     background: black
     center:
       - icon: twitter
