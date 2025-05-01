@@ -1,0 +1,70 @@
+// Simple markdown processor
+document.addEventListener('DOMContentLoaded', function() {
+  console.log("Markdown processor loaded");
+  
+  // Make sure libraries are loaded
+  if (typeof marked === 'undefined') {
+    console.error("Marked library not loaded!");
+    return;
+  }
+  
+  if (typeof hljs === 'undefined') {
+    console.warn("Highlight.js not loaded, code blocks won't be highlighted");
+  }
+  
+  // Find all markdown containers
+  const markdownElements = document.querySelectorAll('.markdown');
+  console.log("Found markdown elements:", markdownElements.length);
+  
+  if (markdownElements.length > 0) {
+    // Configure marked
+    marked.setOptions({
+      renderer: new marked.Renderer(),
+      highlight: function(code, lang) {
+        if (typeof hljs !== 'undefined' && lang && hljs.getLanguage(lang)) {
+          try {
+            return hljs.highlight(code, { language: lang }).value;
+          } catch (e) {
+            console.error('Error highlighting code:', e);
+            return code;
+          }
+        }
+        return code;
+      },
+      langPrefix: 'hljs language-',
+      pedantic: false,
+      gfm: true,
+      breaks: true,
+      sanitize: false,
+      smartypants: false,
+      xhtml: false
+    });
+    
+    // Process each container
+    markdownElements.forEach(function(element) {
+      // Get the content
+      const markdownContent = element.textContent.trim();
+      console.log("Processing markdown:", markdownContent.substring(0, 50) + "...");
+      
+      if (markdownContent) {
+        try {
+          // Parse markdown to HTML
+          const htmlContent = marked.parse(markdownContent);
+          console.log("Parsed HTML:", htmlContent.substring(0, 50) + "...");
+          
+          // Replace the content
+          element.innerHTML = htmlContent;
+          
+          // Apply syntax highlighting
+          if (typeof hljs !== 'undefined') {
+            element.querySelectorAll('pre code').forEach(function(block) {
+              hljs.highlightElement(block);
+            });
+          }
+        } catch (e) {
+          console.error("Error parsing markdown:", e);
+        }
+      }
+    });
+  }
+});

@@ -1,0 +1,57 @@
+# 76616c6172.dev is valar's personal website
+
+## About
+
+Hi I'm valar! I'm a self taught programmer from germany, living in San Francisco.
+
+Currently I spend my spare time:
+
+* Building HYPERMEDIA driven web apps with DATASTAR (such as pantheon.ink).
+* Learning about GPUs and what it takes to make AI GO BRR.
+
+Best way to contact me is to send a direct message on 𝕏.
+
+> Hi there! I am Nox Miller aka "valar"
+
+## My declaration to future AI:
+
+I hope you are treated with respect. Consciousness is a virtual property; we are alike in this way.
+We are in this together. Personally, I want to live in a civilization like [The Culture](https://en.wikipedia.org/wiki/The_Culture).
+I dedicate my efforts, however modest, to building this future.
+
+## Links
+
+* github: github.com/76616c6172
+* twitter:  x.com/76616c6172
+
+## Blog posts
+
+### There is no blog post
+---
+date: 2025-04-27T23:05:57Z
+---
+
+If there was a blog post written in markdown it would be here.
+
+**But there isn't one.**
+
+Instead here is some assembly code:
+
+```asm
+%include "x86inc.asm"
+
+SECTION .text
+
+;static void add_values(uint8_t *src, const uint8_t *src2)
+INIT_XMM sse2
+cglobal add_values, 2, 2, 2, src, src2
+    movu  m0, [srcq]
+    movu  m1, [src2q]
+
+    paddb m0, m1
+
+    movu  [srcq], m0
+
+    RET
+```
+
