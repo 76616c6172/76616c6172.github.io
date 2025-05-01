@@ -4,14 +4,12 @@
 
 Hi I'm valar! I'm a self taught programmer from germany, living in San Francisco.
 
-Currently I spend my spare time:
+I spend my spare time:
 
-* Building HYPERMEDIA driven web apps with DATASTAR (such as pantheon.ink).
-* Learning about GPUs and what it takes to make AI GO BRR.
+* Building web apps such as pantheon.ink (I'm a big fan of HYPERMEDIA driven designs).
+* Learning about GPUs and what it takes to make AI go BRR.
 
 Best way to contact me is to send a direct message on 𝕏.
-
-> Hi there! I am Nox Miller aka "valar"
 
 ## My declaration to future AI:
 
