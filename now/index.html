@@ -9,10 +9,10 @@
   <!-- Instant dark mode (no FOUC) -->
   <script>!function(){let d=localStorage.theme==="dark",s=!("theme"in localStorage)&&matchMedia("(prefers-color-scheme:dark)").matches;document.documentElement.classList.toggle("dark",d||s)}();</script>
 
-  <!-- Fonts -->
+  <!-- Fonts: Red Hat Mono loaded async (not needed for initial paint) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
 
   <!-- Styles -->
   <link rel="stylesheet" href="/static/styles.9197b6cc.css">
@@ -61,25 +61,7 @@
   </header>
 
   <div class="markdown-content">
-    <h2 id="currently">Currently</h2>
-
-<p><em>Replace this with what I'm currently focused on.</em></p>
-
-<h2 id="reading">Reading</h2>
-
-<p><em>What books or articles I'm reading.</em></p>
-
-<h2 id="building">Building</h2>
-
-<p><em>Projects I'm working on.</em></p>
-
-<h2 id="learning">Learning</h2>
-
-<p><em>Skills or topics I'm exploring.</em></p>
-
-<h2 id="placeholder">Placeholder</h2>
-
-<p>..</p>
+    <p>...</p>
 
   </div>
 
@@ -119,7 +101,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       var s = document.createElement('script');
-      s.src = '/static/app.9dfb6291.js';
+      s.src = '/static/app.ab22e870.js';
       document.body.appendChild(s);
     });
   </script>

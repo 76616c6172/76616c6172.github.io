@@ -9,10 +9,10 @@
   <!-- Instant dark mode (no FOUC) -->
   <script>!function(){let d=localStorage.theme==="dark",s=!("theme"in localStorage)&&matchMedia("(prefers-color-scheme:dark)").matches;document.documentElement.classList.toggle("dark",d||s)}();</script>
 
-  <!-- Fonts -->
+  <!-- Fonts: Red Hat Mono loaded async (not needed for initial paint) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
 
   <!-- Styles -->
   <link rel="stylesheet" href="/static/styles.9197b6cc.css">
@@ -119,7 +119,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       var s = document.createElement('script');
-      s.src = '/static/app.9dfb6291.js';
+      s.src = '/static/app.ab22e870.js';
       document.body.appendChild(s);
     });
   </script>

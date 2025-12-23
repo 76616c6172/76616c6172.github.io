@@ -252,17 +252,20 @@
       headerContainer.style.opacity = 1 - (easedHeaderProgress * 0.3);
     }
 
+    // Detect mobile for appropriate video/fallback selection
+    const isMobile = window.innerWidth < 768;
+
     const video = document.createElement('video');
     video.crossOrigin = 'anonymous';
     video.loop = true;
     video.muted = true;
     video.autoplay = true;
     video.playsInline = true;
-    video.src = '/static/waves.mp4';
+    video.src = isMobile ? '/static/waves-mobile.mp4' : '/static/waves.mp4';
 
     const fallbackImage = new Image();
     fallbackImage.crossOrigin = 'anonymous';
-    fallbackImage.src = '/static/waves-fallback.png';
+    fallbackImage.src = isMobile ? '/static/waves-mobile-fallback.jpg' : '/static/waves-fallback.jpg';
 
     let texture = null;
     let texBuffer = null;
