@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="/static/styles.9197b6cc.css">
+  <link rel="stylesheet" href="/static/styles.1e8451d2.css">
 
   
 </head>
@@ -26,7 +26,7 @@
   </div>
 
   <!-- Navigation -->
-  <nav class="max-w-3xl mx-auto px-4 py-2">
+<nav class="max-w-3xl mx-auto px-4 py-0 sm:py-2 -mt-1 sm:mt-0">
     <div class="flex justify-between items-center">
       <div class="flex items-center gap-6">
         <p href="/" class="text-[var(--text)] font-medium">Nox Miller</p>
@@ -35,15 +35,10 @@
         <a href="/now/" aria-current="page" class="text-[var(--text-muted)] hover:text-[var(--text)] transition-colors">Now</a>
       </div>
       <button id="theme-toggle"
-              class="p-1 text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
+              class="text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
               aria-label="Toggle dark mode">
-        <svg class="w-4 h-4 hidden dark:block" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5">
-          <circle cx="12" cy="12" r="8"/>
-          <circle cx="12" cy="12" r="3" fill="currentColor"/>
-        </svg>
-        <svg class="w-4 h-4 dark:hidden" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-        </svg>
+        <span class="dark:hidden">light</span>
+        <span class="hidden dark:inline">dark</span>
       </button>
     </div>
   </nav>
@@ -101,7 +96,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       var s = document.createElement('script');
-      s.src = '/static/app.ab22e870.js';
+      s.src = '/static/app.fffbe9d8.js';
       document.body.appendChild(s);
     });
   </script>
