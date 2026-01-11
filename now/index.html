@@ -9,8 +9,11 @@
   <!-- Instant dark mode (no FOUC) -->
   <script>!function(){let d=localStorage.theme==="dark",s=!("theme"in localStorage)&&matchMedia("(prefers-color-scheme:dark)").matches;document.documentElement.classList.toggle("dark",d||s)}();</script>
 
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/static/wotfard-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+
   <!-- Styles -->
-  <link rel="stylesheet" href="/static/styles.e8d43c12.css">
+  <link rel="stylesheet" href="/static/styles.97d480f4.css">
 
   
 </head>
@@ -102,8 +105,8 @@
     </p>
   </footer>
 
-  <!-- HTMX (excluded from 14KB budget per requirements) -->
-  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js" defer></script>
+  <!-- HTMX (self-hosted, excluded from 14KB budget per requirements) -->
+  <script src="/static/htmx.min.e209dda5.js" defer></script>
 
   <!-- Dark mode toggle script (delegated to survive nav OOB swaps) -->
   <script>

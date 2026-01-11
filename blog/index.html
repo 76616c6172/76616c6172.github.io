@@ -9,8 +9,11 @@
   <!-- Instant dark mode (no FOUC) -->
   <script>!function(){let d=localStorage.theme==="dark",s=!("theme"in localStorage)&&matchMedia("(prefers-color-scheme:dark)").matches;document.documentElement.classList.toggle("dark",d||s)}();</script>
 
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/static/wotfard-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+
   <!-- Styles -->
-  <link rel="stylesheet" href="/static/styles.e8d43c12.css">
+  <link rel="stylesheet" href="/static/styles.97d480f4.css">
 
   
 </head>
@@ -48,8 +51,8 @@
   <ul class="space-y-6">
     
     <li class="border-b border-[var(--border)] pb-6 last:border-0">
-      <a href="/blog/2025-04-27-there-is-no-blog-post/" class="group">
-        <h2 class="text-xl font-medium group-hover:text-[var(--accent)] transition-colors">
+      <a href="/blog/2025-04-27-there-is-no-blog-post/" class="group" hx-swap="outerHTML show:window:top">
+        <h2 class="text-xl font-medium text-[var(--accent)] group-hover:text-[var(--text)] transition-colors">
           There is no blog post
         </h2>
         <time class="text-sm text-[var(--text-muted)] block mt-1">
@@ -77,8 +80,8 @@
     </p>
   </footer>
 
-  <!-- HTMX (excluded from 14KB budget per requirements) -->
-  <script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js" defer></script>
+  <!-- HTMX (self-hosted, excluded from 14KB budget per requirements) -->
+  <script src="/static/htmx.min.e209dda5.js" defer></script>
 
   <!-- Dark mode toggle script (delegated to survive nav OOB swaps) -->
   <script>
