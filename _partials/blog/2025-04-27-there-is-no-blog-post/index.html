@@ -1,0 +1,44 @@
+<main>
+    
+<article class="max-w-3xl mx-auto px-4 py-8">
+  <header class="mb-8">
+    <h1 class="text-3xl font-semibold mb-2">There is no blog post</h1>
+    <time class="text-sm text-[var(--text-muted)]">
+      April 27, 2025
+    </time>
+  </header>
+
+  <div class="markdown-content">
+    <p>If there was a blog post written in markdown it would be here (but there isn't one).</p>
+
+<p>Instead here is some assembly code.</p>
+
+<div class="codehilite">
+<pre><span></span><code><span class="err">%</span><span class="nf">include</span><span class="w"> </span><span class="err">&quot;</span><span class="no">x86inc.asm</span><span class="err">&quot;</span>
+
+<span class="nf">SECTION</span><span class="w"> </span><span class="no">.text</span>
+
+<span class="c1">;static void add_values(uint8_t *src, const uint8_t *src2)  </span>
+<span class="nf">INIT_XMM</span><span class="w"> </span><span class="no">sse2</span><span class="w">  </span>
+<span class="no">cglobal</span><span class="w"> </span><span class="no">add_values</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="no">src</span><span class="p">,</span><span class="w"> </span><span class="no">src2</span><span class="w">   </span>
+<span class="w">    </span><span class="no">movu</span><span class="w">  </span><span class="no">m0</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="no">srcq</span><span class="p">]</span><span class="w">  </span>
+<span class="w">    </span><span class="no">movu</span><span class="w">  </span><span class="no">m1</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="no">src2q</span><span class="p">]</span>
+
+<span class="w">    </span><span class="nf">paddb</span><span class="w"> </span><span class="no">m0</span><span class="p">,</span><span class="w"> </span><span class="no">m1</span>
+
+<span class="w">    </span><span class="nf">movu</span><span class="w">  </span><span class="p">[</span><span class="no">srcq</span><span class="p">],</span><span class="w"> </span><span class="no">m0</span>
+
+<span class="w">    </span><span class="nf">RET</span>
+</code></pre>
+</div>
+
+  </div>
+
+  <footer class="mt-12 pt-8">
+    <a href="/blog/" class="text-[var(--text-muted)] hover:text-[var(--text)] transition-colors" hx-get="/_partials/blog/index.html" hx-push-url="/blog/">
+      &larr; Back to all posts
+    </a>
+  </footer>
+</article>
+
+  </main>
